@@ -1,0 +1,98 @@
+body {
+    background-color: rgba(252, 250, 235);
+}
+
+.calculate {
+    margin: auto;
+    margin-top: 50px;
+    height: 500px;
+    width: 300px;
+    border-radius: 50px;
+    background: linear-gradient(217deg, #fff189, rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, #ffbca1, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, #ade4c3, rgba(0, 0, 255, 0) 70.71%);
+    position: relative;
+    box-shadow: 10px 10px 10px grey, -10px -10px 20px rgba(255, 255, 248, 0.8);
+}
+
+/* 展示区 */
+.display_area {
+    position: absolute;
+    margin: 20px;
+    margin-top: 25px;
+    height: 90px;
+    width: 260px;
+    overflow: hidden;
+    border-radius: 40px 40px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow:
+        inset 7px 7px 12px rgba(103, 102, 102, 0.4);
+}
+
+#display_process {
+    height: 40px;
+    padding-top: 15px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    text-align: right;
+    color: #a5aa89;
+
+}
+
+#total {
+    padding-right: 20px;
+    text-align: right;
+    font-size: 1.8rem;
+    color: rgb(71, 58, 58);
+}
+
+/* 按键区 */
+.keyboard {
+    display: grid;
+    position: absolute;
+    margin: 130px 10px 0 10px;
+    /* 将网格分为4列*/
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+button {
+    color: rgb(93, 79, 79);
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    width: 55px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: .1s all;
+    box-shadow:
+        5px 5px 5px rgba(84, 81, 81, 0.3),
+        -5px -5px 10px rgba(255, 249, 249, 0.5);
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.55);
+    }
+
+    &:active {
+        color: rgb(43, 30, 30);
+        box-shadow:
+            inset 7px 7px 12px rgba(103, 102, 102, 0.4);
+    }
+}
+
+.sign {
+    color: #ff8859;
+
+    &:active {
+        color: #f66b5b;
+    }
+}
+
+/* 特殊按钮绿色版 */
+/* .sign{
+    color:#9dbc02;
+    &:active{
+        color:#ff8859;
+    }
+} */

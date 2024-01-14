@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+</head>
+<body>
+    <div class="calculate">
+        <!-- 展示区 -->
+        <div class="display_area">
+            <div id="display_process"></div>
+            <div id="total"></div>
+        </div>
+        <!-- 按键区 -->
+        <div class="keyboard">
+            <button class="sign" onclick="calcClear()">AC</button>
+            <button class="sign" onclick="changeSign()">+/-</button>
+            <button class="sign" onclick="calcAction('%')">%</button>
+            <button class="sign" onclick="calcAction('/')">/</button>
+
+            <button onclick="addNumber(7)">7</button>
+            <button onclick="addNumber(8)">8</button>
+            <button onclick="addNumber(9)">9</button>
+            <button class="sign" onclick="calcAction('×')">X</button>
+
+            <button onclick="addNumber(4)">4</button>
+            <button onclick="addNumber(5)">5</button>
+            <button onclick="addNumber(6)">6</button>
+            <button class="sign" onclick="calcAction('-')">-</button>
+
+            <button onclick="addNumber(1)">1</button>
+            <button onclick="addNumber(2)">2</button>
+            <button onclick="addNumber(3)">3</button>
+            <button class="sign" onclick="calcAction('+')">+</button>
+
+            <span></span>
+            <button onclick="addNumber(0)">0</button>
+            <button onclick="addDot()">.</button>
+            <button class="sign" onclick="calcResult()">=</button>
+
+        </div>
+    </div>
+</body>
+<script src="js/calculate.js"></script>
+</html>
